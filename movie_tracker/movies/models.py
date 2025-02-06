@@ -8,6 +8,5 @@ class Movie(models.Model):
     
     def __str__(self):
         return self.name
-
-    def formatted_release_date(self):
-        return self.release_date.strftime('%B %d, %Y')  # formatted like 'January 01, 2025'
+    
+#comment
