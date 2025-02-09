@@ -1,4 +1,4 @@
-#!/home/ayush/movie-tracker/movie-env/bin/python3
+#!/home/nkita/movie-tracker/movie-env/bin/python3.10
 # -*- coding: utf-8 -*-
 import re
 import sys
