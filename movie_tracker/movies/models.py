@@ -1,12 +1,11 @@
+from django.utils.timezone import now
 from django.db import models
 
 class Movie(models.Model):
-    name = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
     release_date = models.DateField()
-    genre = models.CharField(max_length=100)
-    upcoming = models.BooleanField(default=False)
+    description = models.TextField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
-        return self.name
-    
-#comment
+        return self.title
